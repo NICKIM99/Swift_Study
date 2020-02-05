@@ -47,10 +47,14 @@ UITableViewController
 UITextView
 
 Keyboard Actions
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 20.02.05
 notification 추가 
+
 notification 발생 함수
+
 notification 설정 함수 (권한을 얻는 부분) 
+
 handling 함수 
 
