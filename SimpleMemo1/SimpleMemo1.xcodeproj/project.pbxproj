@@ -15,6 +15,7 @@
 		5004D31523E93F1300CF4EF3 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004D31423E93F1300CF4EF3 /* UserDataManager.swift */; };
 		5004D31723E9454100CF4EF3 /* MemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004D31623E9454100CF4EF3 /* MemoVC.swift */; };
 		5004D33723E94B8D00CF4EF3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004D33623E94B8D00CF4EF3 /* Utils.swift */; };
+		505A7B3023EA90860019A4BC /* AlarmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A7B2F23EA90860019A4BC /* AlarmDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5004D31423E93F1300CF4EF3 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		5004D31623E9454100CF4EF3 /* MemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoVC.swift; sourceTree = "<group>"; };
 		5004D33623E94B8D00CF4EF3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../../../../Desktop/SimpleNotepad2/SimpleNotepad/Utils.swift; sourceTree = "<group>"; };
+		505A7B2F23EA90860019A4BC /* AlarmDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				5004D31423E93F1300CF4EF3 /* UserDataManager.swift */,
 				5004D31623E9454100CF4EF3 /* MemoVC.swift */,
 				5004D33623E94B8D00CF4EF3 /* Utils.swift */,
+				505A7B2F23EA90860019A4BC /* AlarmDetailVC.swift */,
 			);
 			path = SimpleMemo1;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5004D33723E94B8D00CF4EF3 /* Utils.swift in Sources */,
+				505A7B3023EA90860019A4BC /* AlarmDetailVC.swift in Sources */,
 				5004D31523E93F1300CF4EF3 /* UserDataManager.swift in Sources */,
 				5004D30523E9289200CF4EF3 /* ViewController.swift in Sources */,
 				5004D31723E9454100CF4EF3 /* MemoVC.swift in Sources */,

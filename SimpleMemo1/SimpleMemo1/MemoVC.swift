@@ -9,19 +9,35 @@
 import UIKit
 
 class MemoVC: UIViewController {
-
+    @IBOutlet var slider: UISlider!
+    
     @IBOutlet var tvMemoInput: UITextView!
     var timestamp:TimeInterval!
     
+    
+    @IBOutlet var textEnabler: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setMemoText()
         registerForKeyboardNotifications()
         
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func doEnable(_ sender: UISwitch) {
+        tvMemoInput.isEditable = sender.isOn
+        tvMemoInput.isSelectable = sender.isOn //복사도 안됨 ㅋㅋ
+    }
+    @IBAction func changeTextSize(_ sender: UISlider) {
+        let value = sender.value
+        let size = 13.0 + (20.0*value)
+        
+        tvMemoInput.font = .systemFont(ofSize:CGFloat(size))
+        tvMemoInput.layoutIfNeeded() //layout 크기가 즉시 변경 되게끔 해준다
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,6 +54,7 @@ class MemoVC: UIViewController {
         let str = Utils.shared.timeString(time: timestamp)
         if UserDataManager.shared.saveMemo(with: str, memo: tvMemoInput.text) {
             self.navigationController?.popViewController(animated: true)
+            Utils.shared.completeSaveNotification()
         }
     }
     

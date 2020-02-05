@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.title = "메모 목록"
         list = UserDataManager.shared.getList(with: UserDataManager.LIST_KEY_DEFAULT)
         
     }
